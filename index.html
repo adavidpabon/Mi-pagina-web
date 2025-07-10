@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: rgb(255, 241, 241);
+            color: rgb(47, 43, 43);
+        }
+        
+        header {
+            background-color: grey;
+            color: rgb(255, 255, 255);
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        footer {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .contenedor {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        
+        .presentacion {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .mascotas {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        
+        .tarjeta {
+            background-color: rgb(200, 192, 192);
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+            text-align: center;
+        }
+        
+        .tarjeta img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        
+        @media(min-width:600px) {
+            .mascotas {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media(min-width:900px) {
+            .mascotas {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>AMIGOS PELUDOS</h1>
+        <p>Todo lo que necesitas saber de tus mascotas favoritas</p>
+
+    </header>
+    <main class="contenedor">
+        <section class="presentacion">
+            <h2>¿Por que tener una mascota?</h2>
+            <p>Las mascotas traen alegria, compañia y mejoran nuestra salud emocional</p>
+
+        </section>
+        <section class="mascotas">
+            <article class="tarjeta">
+                <img src="https://cdn.pixabay.com/photo/2017/04/30/18/33/kittens-2273598_1280.jpg" alt="gato">
+                <h3>Gato</h3>
+                <p>Los gatos son animales independientes y cariñosos</p>
+
+            </article>
+            <article class="tarjeta">
+                <img src="https://cdn.pixabay.com/photo/2021/07/13/09/37/dogs-6463032_1280.jpg" alt="perro">
+                <h3>Perro</h3>
+                <p>Los perros son leales, juguetones y excelentes compañeros</p>
+
+            </article>
+            <article class="tarjeta">
+                <img src="https://cdn.pixabay.com/photo/2024/01/05/10/53/rabbit-8489271_1280.png" alt="conejo">
+                <h3>Conejo</h3>
+                <p>Los conejos son tiernos, silenciosos y muy sociable si se les educa bien</p>
+
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy;2025 Amigos Peludos, todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
